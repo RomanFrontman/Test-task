@@ -1,0 +1,133 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.4;
+    background: var(--body-bg);
+    margin: 0;
+    padding: 0;
+
+    .loaded {
+        overflow: auto;
+    }
+
+    .overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width : 767px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin-top: 0;
+}
+
+h1 {
+	font-size: 3.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.3rem;
+}
+
+img {
+	max-width: 100%;
+    border-radius: 5px;
+}
+
+a {
+	-webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    text-decoration: underline;
+    color: var(--primary);
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.relation {
+    position: relative;
+}
+.relation__ratio {
+    height: 0;
+}
+.relation__ratio--1x1 {
+    padding-top: 100%;
+}
+
+.relation__ratio--16x9 {
+    padding-top: 56.25%;
+}
+
+.relation__ratio--3x1 {
+    padding-top: 33%;
+}
+
+.relation iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.roman-color--light {
+    color: var(--text-lighter);
+}
+
+.roman-color--primary {
+    color: var(--primary);
+}
+
+.roman-color--secondary {
+    color: var(--secondary);
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+}
+
+td {
+    border: 1px solid var(--text);
+    padding: 10px;
+}
