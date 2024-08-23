@@ -70,7 +70,6 @@ img {
 a {
   transition: all 0.3s;
   text-decoration: underline;
-  color: var(--primary);
 }
 a:hover {
   text-decoration: none;
